@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://sailinglab.github.io/pgm-spring-2019/project/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="content-language" content="en">
+  
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>10-708 PGM | Course Project</title>
+  <meta name="description" content="10-708 - Probabilistic Graphical Models - Carnegie Mellon University - Spring 2019
+">
+
+  <link rel="shortcut icon" href="https://sailinglab.github.io/pgm-spring-2019/assets/img/favicon.ico">
+
+  <style class="anchorjs"></style><link rel="stylesheet" href="./10-708-projects-course-page_files/main.css">
+  <link rel="canonical" href="https://sailinglab.github.io/pgm-spring-2019/project/">
+
+  
+  <!-- Load Latex JS -->
+  <script async="" src="./10-708-projects-course-page_files/analytics.js.download"></script><script src="./10-708-projects-course-page_files/latex.min.js.download"></script>
+  <script src="./10-708-projects-course-page_files/latex.component.js.download"></script>
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <span class="site-title">
+      <a class="page-link" href="https://sailinglab.github.io/pgm-spring-2019/">10-708 PGM</a>
+    </span>
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <a class="page-link" href="https://sailinglab.github.io/pgm-spring-2019/logistics/">logistics</a>
+        <a class="page-link" href="https://sailinglab.github.io/pgm-spring-2019/lectures/">lectures</a>
+        <a class="page-link" href="https://sailinglab.github.io/pgm-spring-2019/notes/">notes</a>
+        <a class="page-link" href="https://sailinglab.github.io/pgm-spring-2019/calendar/">calendar</a>
+        <a class="page-link" href="https://sailinglab.github.io/pgm-spring-2019/homework/">homework</a>
+        <a class="page-link" href="https://sailinglab.github.io/pgm-spring-2019/project/">project</a>
+        <a class="page-link" href="https://sailinglab.github.io/pgm-spring-2019/reports/">reports</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Course Project</h1>
+    <h2 class="post-description">Guidelines and suggestions for course projects</h2>
+  </header>
+
+  <article class="post-content Course Project clearfix">
+    <p>Your class project is an opportunity for you to explore an interesting problem in the context of a real-world data sets.
+Projects should be done in teams of three students.
+Each project will be assigned a TA as a project consultant/mentor; instructors and TAs will consult with you on your ideas, but of course the final responsibility to define and execute an interesting piece of work is yours. Your project will be worth 46% of your final class grade, and will have 4 deliverables:</p>
+
+<ol>
+  <li><strong>Proposal</strong> : 2 pages excluding references (10%)</li>
+  <li><strong>Midway Report</strong> : 5 pages excluding references (20%)</li>
+  <li><strong>Presentation</strong> : poster presentation (20%)</li>
+  <li><strong>Final Report</strong> : 8 pages excluding references (50%)</li>
+</ol>
+
+<p>All write-ups should use the <a href="https://media.neurips.cc/Conferences/ICML2019/Styles/icml2019_style.zip">ICML style</a>.</p>
+
+<hr>
+
+<ul id="markdown-toc">
+  <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#team-formation" id="markdown-toc-team-formation">Team Formation</a></li>
+  <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#project-proposal" id="markdown-toc-project-proposal">Project Proposal</a></li>
+  <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#midway-report" id="markdown-toc-midway-report">Midway Report</a></li>
+  <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#final-report" id="markdown-toc-final-report">Final Report</a></li>
+  <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#presentation" id="markdown-toc-presentation">Presentation</a></li>
+  <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#project-suggestions" id="markdown-toc-project-suggestions">Project Suggestions</a>    <ul>
+      <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#deep-generative-models-for-disentangled-representation-learning" id="markdown-toc-deep-generative-models-for-disentangled-representation-learning">Deep generative models for disentangled representation learning</a></li>
+      <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#deep-generative-models-for-video-text-and-audio-generation" id="markdown-toc-deep-generative-models-for-video-text-and-audio-generation">Deep generative models for video, text, and audio generation</a></li>
+      <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#squeezing-no-tears-scalable-bayesian-network-structure-learning" id="markdown-toc-squeezing-no-tears-scalable-bayesian-network-structure-learning">Squeezing NO TEARS: scalable Bayesian network structure learning</a></li>
+      <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#optimization-based-decoding-for-improved-neural-machine-translation" id="markdown-toc-optimization-based-decoding-for-improved-neural-machine-translation">Optimization-based decoding for improved neural machine translation</a></li>
+      <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#learning-contextual-models-for-personalization-interpretability-and-beyond" id="markdown-toc-learning-contextual-models-for-personalization-interpretability-and-beyond">Learning contextual models for personalization, interpretability, and beyond</a></li>
+      <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#hierarchical-rl--maximum-entropy-rl" id="markdown-toc-hierarchical-rl--maximum-entropy-rl">Hierarchical RL &amp; Maximum Entropy RL</a></li>
+      <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#large-scale-scalable-machine-learning" id="markdown-toc-large-scale-scalable-machine-learning">Large-scale (scalable) Machine Learning</a></li>
+      <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#machine-learning-onwith-graphs" id="markdown-toc-machine-learning-onwith-graphs">Machine Learning on/with Graphs</a></li>
+      <li><a href="https://sailinglab.github.io/pgm-spring-2019/project/#automated-machine-learning" id="markdown-toc-automated-machine-learning">Automated Machine Learning</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr>
+
+<h3 id="team-formation">Team Formation<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#team-formation" aria-label="Anchor link for: team formation" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>You are responsible for forming project teams of 3-4 people.
+In some cases, we will also accept teams of 2, but a 3-4-person group is preferred.
+Once you have formed your group, please send one email per team to the class instructor list with the names of all team members.
+If you have trouble forming a group, please send us an email and we will help you find project partners.</p>
+
+<h3 id="project-proposal">Project Proposal<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#project-proposal" aria-label="Anchor link for: project proposal" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>You must turn in a brief project proposal that provides an overview of your idea and also contains a brief survey of related work on the topic.
+We will provide a list of suggested project ideas for you to choose from, though you may discuss other project ideas with us, whether applied or theoretical.
+Note that even though you can use datasets you have used before, <strong>you cannot use work that you started prior to this class as your project</strong>.</p>
+
+<p>Proposals should be approximately <strong>two pages long</strong>, and should include the following information:</p>
+
+<ul>
+  <li>Project title and list of group members.</li>
+  <li>Overview of project idea. This should be approximately half a page long.</li>
+  <li>A short literature survey of 4 or more relevant papers. The literature review should take up approximately one page.</li>
+  <li>Description of potential data sets to use for the experiments.</li>
+  <li>Plan of activities, including what you plan to complete by the midway report and how you plan to divide up the work.</li>
+</ul>
+
+<p>The grading breakdown for the proposal is as follows:</p>
+
+<ul>
+  <li>40% for clear and concise description of proposed method</li>
+  <li>40% for literature survey that covers at least 4 relevant papers</li>
+  <li>10% for plan of activities</li>
+  <li>10% for quality of writing</li>
+</ul>
+
+<p>The project proposal will be due at <strong>11:59 PM on Friday, February 22th</strong>, and should be submitted via <a href="https://www.gradescope.com/courses/36025">Gradescope</a>.</p>
+
+<h3 id="midway-report">Midway Report<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#midway-report" aria-label="Anchor link for: midway report" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>The midway report will serve as a check-point at the halfway mark of your project.
+It should be about <strong>5 pages long</strong>, and should be formatted like a conference paper, with the following sections: introduction, background &amp; related work, methods, experiments, conclusion.
+The introduction and related work sections should be in their final form; the section on the proposed methods should be almost finished; the sections on the experiments and conclusions will have the results you have obtained, perhaps with place-holders for the results you plan/hope to obtain.</p>
+
+<p>The grading breakdown for the midway report is as follows:</p>
+
+<ul>
+  <li>20% for introduction and literature survey</li>
+  <li>40% for proposed method</li>
+  <li>20% for the design of upcoming experiments and revised plan of activities (in an appendix, please show the old and new activity plans)</li>
+  <li>10% for data collection and preliminary results</li>
+  <li>10% for quality of writing</li>
+</ul>
+
+<p>The project midway report will be due at <strong>11:59 PM on Friday, March 29th</strong>, and must be submitted via <a href="https://www.gradescope.com/courses/36025">Gradescope</a>.</p>
+
+<h3 id="final-report">Final Report<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#final-report" aria-label="Anchor link for: final report" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>Your final report is expected to be <strong>8 pages excluding references</strong>, in accordance with the length requirements for an ICML paper. It should have roughly the following format:</p>
+
+<ul>
+  <li>Introduction: problem definition and motivation</li>
+  <li>Background &amp; Related Work: background info and literature survey</li>
+  <li>Methods
+– Overview of your proposed method
+– Intuition on why should it be better than the state of the art
+– Details of models and algorithms that you developed</li>
+  <li>Experiments
+– Description of your testbed and a list of questions your experiments are designed to answer
+– Details of the experiments and results</li>
+  <li>Conclusion: discussion and future work</li>
+</ul>
+
+<p>The grading breakdown for the final report is as follows:</p>
+
+<ul>
+  <li>10% for introduction and literature survey</li>
+  <li>30% for proposed method (soundness and originality)</li>
+  <li>30% for correctness, completeness, and difficulty of experiments and figures</li>
+  <li>10% for empirical and theoretical analysis of results and methods</li>
+  <li>20% for quality of writing (clarity, organization, flow, etc.)</li>
+</ul>
+
+<p>The project final report will be due at <strong>11:59 PM on Friday, May 10th</strong> (tentative), and must be submitted via <a href="https://www.gradescope.com/courses/36025">Gradescope</a>.</p>
+
+<h3 id="presentation">Presentation<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#presentation" aria-label="Anchor link for: presentation" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<p>All project teams will present their work at the end of the semester.
+We will have a 2-3-hour long poster session held in NSH atrium on April 30.
+Each team should prepare a poster (similar in style to a conference poster) and present it during the allocated time.
+If applicable, live demonstrations of your software are highly encouraged.</p>
+
+<h2 id="project-suggestions">Project Suggestions<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#project-suggestions" aria-label="Anchor link for: project suggestions" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>If you are interested in a particular project, please contact the respective <em>contact person</em> to get further ideas or details.
+We may add more project suggestions down the road.</p>
+
+<hr>
+
+<h4 id="deep-generative-models-for-disentangled-representation-learning">Deep generative models for disentangled representation learning<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#deep-generative-models-for-disentangled-representation-learning" aria-label="Anchor link for: deep generative models for disentangled representation learning" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p><strong>Contact person:</strong> <a href="https://www.cs.cmu.edu/~pliang/" target="\_blank">Paul Liang</a></p>
+
+<p>Disentangled representation learning involves learning a set of latent variables that each capture individual factors of variation in the data.
+For example, when we learn a generative model for shapes, it would be ideal if each latent variables would correspond to the shapes pose, shadow, rotations, lighting etc.
+This improves interpretability of our learned representations and allows flexible generation from latent variables.
+You can explore new methods of learning disentangled representations in both supervised and unsupervised settings (i.e. whether information about pose, shadow, rotations are given or not), design metrics for improved evaluation of disentanglement in models, as well as new applications of disentangled representation learning to improve performance on NLP, vision, and multimodal tasks.</p>
+
+<p><strong>References:</strong></p>
+
+<ol>
+  <li><a href="https://sites.google.com/view/disentanglenips2017" target="\_blank">Papers in NIPS 2017 workshop on disentangled representation learning</a>.</li>
+  <li>Denton et al., <a href="https://papers.nips.cc/paper/7028-unsupervised-learning-of-disentangled-representations-from-video" target="\_blank">Unsupervised Learning of Disentangled Representations from Video</a>. NIPS 2017.</li>
+  <li>Chen et al., <a href="https://arxiv.org/abs/1606.03657" target="\_blank">InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets</a>. NIPS 2016.</li>
+  <li>Kulkarni et al., <a href="https://arxiv.org/abs/1503.03167" target="\_blank">Deep Convolutional Inverse Graphics Network</a>. NIPS 2015.</li>
+</ol>
+
+<hr>
+
+<h4 id="deep-generative-models-for-video-text-and-audio-generation">Deep generative models for video, text, and audio generation<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#deep-generative-models-for-video-text-and-audio-generation" aria-label="Anchor link for: deep generative models for video text and audio generation" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p><strong>Contact person:</strong> <a href="https://www.cs.cmu.edu/~pliang/" target="\_blank">Paul Liang</a></p>
+
+<p>Generative models are important for probabilistic reasoning within graphical models. Recent advancements in parameterizing these models using deep neural networks and optimizating using gradient-based techniques have enabled large scale modeling of high-dimensional, real-world data. Deep generative models have been successfully been applied for image, text, and audio generation.
+You can explore new applications of deep generative models, improve the theoretical understanding and empirical optimization of deep generative models, design metrics for improved evaluation of deep generative models, and other new directions.</p>
+
+<p><strong>References:</strong></p>
+
+<ol>
+  <li><a href="https://ermongroup.github.io/generative-models/" target="\_blank">IJCAI Tutorial on Deep Generative Models by Aditya Grover and Stefano Ermon</a>.</li>
+  <li><a href="https://sites.google.com/view/tadgm/home" target="\_blank">ICML Workshop on Deep Generative Models</a>.</li>
+  <li>Brock et al., <a href="https://arxiv.org/abs/1809.11096" target="\_blank">Large Scale GAN Training for High Fidelity Natural Image Synthesis</a>. ICLR 2019.</li>
+  <li>Hu et al., <a href="https://arxiv.org/pdf/1703.00955.pdf" target="\_blank">Toward Controlled Generation of Text</a>. ICML 2017.</li>
+  <li>van den Oord et al., <a href="https://arxiv.org/abs/1609.03499" target="\_blank">WaveNet: A Generative Model for Raw Audio</a>. arXiv 2016.</li>
+</ol>
+
+<hr>
+
+<h4 id="squeezing-no-tears-scalable-bayesian-network-structure-learning">Squeezing NO TEARS: scalable Bayesian network structure learning<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#squeezing-no-tears-scalable-bayesian-network-structure-learning" aria-label="Anchor link for: squeezing no tears scalable bayesian network structure learning" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p><strong>Contact person:</strong> <a href="https://www.cs.cmu.edu/~xunzheng/" target="\_blank">Xun Zheng</a></p>
+
+<p>Estimating Bayesian network structure from data is one of the fundamental problems in graphical models. 
+A similar problem of estimating Markov network structure has efficient solutions such as the graphical lasso [1]. 
+However, compared to Markov networks, estimating Bayesian networks involves extra challenges: 1) the adjacency matrix is not symmetric; 2) the acyclicity constraint is combinatorial. 
+Recently [2] proposed a smooth characterization of directed acyclic graphs, enabling continuous optimization for Bayesian network structure learning, similar to graphical lasso for Markov networks.</p>
+
+<p>In this project, your goal would be to scale up the algorithm of [2] to thousands of nodes. 
+Some computation can be saved by exploiting the problem structure, and some computation can be made more efficient using various approximation techniques.</p>
+
+<p><strong>References:</strong></p>
+
+<ol>
+  <li>Friedman, J., Hastie, T., &amp; Tibshirani, R. (2008). Sparse inverse covariance estimation with the graphical lasso. Biostatistics.</li>
+  <li>Zheng, X., Aragam, B., Ravikumar, P., &amp; Xing, E. P. (2018). DAGs with NO TEARS: Continuous Optimization for Structure Learning. In Advances in Neural Information Processing Systems.</li>
+</ol>
+
+<hr>
+
+<h4 id="optimization-based-decoding-for-improved-neural-machine-translation">Optimization-based decoding for improved neural machine translation<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#optimization-based-decoding-for-improved-neural-machine-translation" aria-label="Anchor link for: optimization based decoding for improved neural machine translation" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p><strong>Contact person:</strong> <a href="https://www.cs.cmu.edu/~mshediva/" target="\_blank">Maruan Al-Shedivat</a></p>
+
+<p>Encoder-decoder [1] with attention [2] is a typical architecture of modern neural machine translation (NMT) systems.
+Arguably, the quality of the decoder (as well as the decoding process itself) significantly affects translation and often requires large amounts of parallel training data.</p>
+
+<p>In this project, your goal would be to explore the potential of building more efficient decoders using pre-trained target language models (LMs).
+The idea is inspired by a recent technique used in model-based reinforcement learning [3]:</p>
+
+<blockquote>
+  <p>Given a sentence in the source language and a pre-trained target LM, generate a sequence of words in the target language by starting from a random sequence and iteratively refining it to increase its likelihood under the given LM.</p>
+</blockquote>
+
+<p>The challenge is to ensure that by optimizing the language model (that represents an unconditional distribution), the generated sentence is a valid translation (i.e., preserves the meaning of the source sentence).</p>
+
+<p><strong>References:</strong></p>
+
+<ol>
+  <li>Sutskever, Vinyals, Le. <a href="http://papers.nips.cc/paper/5346-sequence-to-sequence-learnin" target="\_blank">Sequence to sequence learning with neural networks</a>. NIPS 2014.</li>
+  <li>Bahdanau, Cho, Bengio. <a href="https://arxiv.org/abs/1409.0473" target="\_blank">Neural machine translation by jointly learning to align and translate</a>. ICLR 2015.</li>
+  <li>Srinivas, Jabri, Abbeel, Levine, Finn. <a href="https://arxiv.org/abs/1804.00645" target="\_blank">Universal Planning Networks</a>. ICML 2018.</li>
+</ol>
+
+<hr>
+
+<h4 id="learning-contextual-models-for-personalization-interpretability-and-beyond">Learning contextual models for personalization, interpretability, and beyond<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#learning-contextual-models-for-personalization-interpretability-and-beyond" aria-label="Anchor link for: learning contextual models for personalization interpretability and beyond" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p><strong>Contact person:</strong> <a href="https://www.cs.cmu.edu/~mshediva/" target="\_blank">Maruan Al-Shedivat</a></p>
+
+<p>Oftentimes, we would like the models of our data to be not only accurate, but also human-interpretable.
+A recently developed class of models, called Contextual Explanation Networks (CENs) [1], provides a flexible way to achieve this: on a high level, it allows to learn families of contextualized simple/interpretable models (e.g., sparse linear), called explanations, which are ‘glued’ together via deep neural networks.
+In essence, CENs model conditional probability distributions of the form <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>(</mo><mi>Y</mi><mo>∣</mo><mi>X</mi><mo separator="true">,</mo><mi>C</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">P(Y \mid X, C)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span></span>, distinguishing between semantic (or interpretable) features <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span></span></span> and non-semantic features <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span></span>.
+There is a number of interesting directions one could take CEN further.</p>
+
+<ol>
+  <li>
+    <p><strong>Beyond linear explanations.</strong> <br>
+The original paper [1] developed CEN with only linear explanations (for scalar and structured output spaces).
+Is it possible to use other types of simple models?
+For instance, lists of rules [2] or their causal version [3] is a popular method when it comes to interpretability.
+However, is it possible to integrate such models into the CEN framework and make them trainable end-to-end?
+Applications of ML in the healthcare domain may significantly benefit from such models.</p>
+  </li>
+  <li>
+    <p><strong>Beyond conditional models.</strong> <br>
+CEN was designed to represent conditional distributions, i.e., directly answer queries such as, <em>What is the probability of <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span></span></span></span></span> given <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span></span></span> and <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span></span>?</em>
+The problem is that the model always requires having access to <em>two modalities</em> of the input (<span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span></span></span> and <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span></span>), which is a limitation, since in a real-world scenario, certain data modalities might be missing or hard to obtain.
+Hence, is it possible to build a CEN model that works with missing or latent <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span></span></span> or <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span></span> variables?
+Is building a contextual model for the join distribution over <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>X</mi><mo separator="true">,</mo><mi>C</mi><mo separator="true">,</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X, C, Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span></span></span></span></span> the right way to go?</p>
+  </li>
+  <li>
+    <p><strong>CEN for few-shot learning and/or meta-learning.</strong> <br>
+Note the CEN framework technically uses DNNs to generate parameters for simpler models (to contextualize them).
+More generally, part of the model is used to ‘modulate’ another part of the model, which has been successful in a number of areas [4], including zero-shot learning, multilingual translation [5], etc.
+Multitask few-shot learning and meta-learning [6] pose a new interesting setup, in which contextual/conditional models could work very well [7].
+Another direction to explore in your projects is the design and implementation of CEN-like models for these new tasks.</p>
+  </li>
+</ol>
+
+<p><strong>References:</strong></p>
+
+<ol>
+  <li>Al-Shedivat, Dubey, Xing. <a href="https://arxiv.org/abs/1705.10301" target="\_blank">Contextual explanation networks</a>. arXiv 2017.</li>
+  <li>Wang, Rudin. <a href="https://arxiv.org/abs/1411.5899" target="\_blank">Falling rule lists</a>. AISTATS 2015.</li>
+  <li>Wang, Rudin. <a href="https://arxiv.org/abs/1510.05189" target="\_blank">Causal falling rule lists</a>. FATML workshop 2017.</li>
+  <li>Dumoulin et al. <a href="https://distill.pub/2018/feature-wise-transformations/" target="\_blank">Feature-wise transformations</a>. Distill 2018.</li>
+  <li>Platanios et al. <a href="https://blog.ml.cmu.edu/2019/01/14/contextual-parameter-generation-for-universal-neural-machine-translation/" target="\_blank">Contextual parameter generation for neural machine translation</a>. EMNLP 2018.</li>
+  <li>Finn, Abbeel, Levine. <a href="https://arxiv.org/abs/1703.03400" target="\_blank">Model-agnostic meta-learning for fast adaptation of neural networks</a>. ICML 2017.</li>
+  <li>Garnelo et al. <a href="https://arxiv.org/abs/1807.01613" target="\_blank">Conditional neural processes</a>. ICML 2018.</li>
+</ol>
+
+<hr>
+
+<h4 id="hierarchical-rl--maximum-entropy-rl">Hierarchical RL &amp; Maximum Entropy RL<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#hierarchical-rl--maximum-entropy-rl" aria-label="Anchor link for: hierarchical rl  maximum entropy rl" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<p><strong>Contact person:</strong> <a href="http://leelisa.com/" target="\_blank">Lisa Lee</a></p>
+
+<p>Reinforcement learning (RL) is typically formulated as a <strong>Markov decision process (MDP)</strong> of an agent interacting with the environment to maximize its cumulative reward. More specifically, an MDP is a tuple <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi mathvariant="script">S</mi><mo separator="true">,</mo><mi mathvariant="script">A</mi><mo separator="true">,</mo><mi mathvariant="script">T</mi><mo separator="true">,</mo><mi mathvariant="script">R</mi><mo separator="true">,</mo><mi>γ</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(\mathcal{S}, \mathcal{A}, \mathcal{T}, \mathcal{R}, \gamma)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathcal" style="margin-right:0.075em;">S</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathcal">A</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.25417em;">T</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathcal">R</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05556em;">γ</span><span class="mclose">)</span></span></span></span></span> where <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="script">S</mi></mrow><annotation encoding="application/x-tex">\mathcal{S}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.075em;">S</span></span></span></span></span></span> is a set of states, <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="script">A</mi></mrow><annotation encoding="application/x-tex">\mathcal{A}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal">A</span></span></span></span></span></span> is a set of actions, <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="script">T</mi><mo>(</mo><msup><mi>s</mi><mo mathvariant="normal">′</mo></msup><mo>∣</mo><mi>s</mi><mo separator="true">,</mo><mi>a</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\mathcal{T}(s' \mid s, a)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.001892em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.25417em;">T</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">s</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">a</span><span class="mclose">)</span></span></span></span></span> is the transition probability of ending up in state <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>s</mi><mo mathvariant="normal">′</mo></msup><mo>∈</mo><mi mathvariant="script">S</mi></mrow><annotation encoding="application/x-tex">s' \in \mathcal{S}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.790992em;vertical-align:-0.0391em;"></span><span class="mord"><span class="mord mathdefault">s</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.075em;">S</span></span></span></span></span></span> when executing action <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>∈</mo><mi mathvariant="script">A</mi></mrow><annotation encoding="application/x-tex">a \in \mathcal{A}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal">A</span></span></span></span></span></span> in state <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mo>∈</mo><mi mathvariant="script">S</mi></mrow><annotation encoding="application/x-tex">s \in \mathcal{S}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.075em;">S</span></span></span></span></span></span>, <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="script">R</mi><mo>:</mo><mi mathvariant="script">S</mi><mo>→</mo><mi mathvariant="double-struck">R</mi></mrow><annotation encoding="application/x-tex">\mathcal{R}: \mathcal{S} \rightarrow \mathbb{R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal">R</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.075em;">S</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbb">R</span></span></span></span></span></span> is the reward function, and <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>γ</mi><mo>∈</mo><mo>(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo>]</mo></mrow><annotation encoding="application/x-tex">\gamma \in (0, 1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335400000000001em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05556em;">γ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span></span> is a discount factor. A policy <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span></span> maps each state-action pair <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>s</mi><mo separator="true">,</mo><mi>a</mi><mo>)</mo><mo>∈</mo><mi mathvariant="script">S</mi><mo>×</mo><mi mathvariant="script">A</mi></mrow><annotation encoding="application/x-tex">(s, a) \in \mathcal{S} \times \mathcal{A}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">a</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.075em;">S</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal">A</span></span></span></span></span></span> to the probability <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>π</mi><mo>(</mo><mi>s</mi><mo separator="true">,</mo><mi>a</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\pi(s, a)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">a</span><span class="mclose">)</span></span></span></span></span> of taking action <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span></span> when in state <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span></span>. The agent’s goal is to learn a policy that maximizes its cumulative discounted reward <span class="inline-equation"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi mathvariant="double-struck">E</mi><mi>π</mi></msub><mrow><mo fence="true">[</mo><msub><mo>∑</mo><mi>t</mi></msub><msup><mi>γ</mi><mi>t</mi></msup><msub><mi>r</mi><mi>t</mi></msub><mo fence="true">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{E}_\pi\left[\sum_t \gamma^t r_t \right]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0932659999999998em;vertical-align:-0.29971000000000003em;"></span><span class="mord"><span class="mord"><span class="mord mathbb">E</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">π</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">[</span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1308459999999999em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05556em;">γ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7935559999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">]</span></span></span></span></span></span>.</p>
+
+<p>In the last several years, deep learning has helped achieve major breakthroughs in RL by enabling methods to automatically learn features from high-dimensional observations (e.g., raw image pixels). These advances have especially benefited vision-based RL problems and robotic manipulation methods. Despite the progress, several key challenges limit the applicability and scalability of deep RL algorithms. For example, efficient exploration and long-term credit assignment remain core problems, especially in settings with sparse or delayed rewards. Another challenge is that the data inefficiency of deep RL algorithms makes training computationally expensive and difficult to scale in the complexity and number of tasks.</p>
+
+<p>One framework to tackle these challenges is <strong>hierarchical RL (HRL)</strong>, which enables temporal abstraction by learning hierarchical policies operating at different timescales and decomposing tasks into smaller subtasks. Another interesting line of work is <strong>maximum entropy RL</strong> which encourages agents to learn diverse behaviors agnostic of the task.</p>
+
+<p>I’d be happy to share more specific project ideas and advise students. Please feel free to stop by office hours if interested.</p>
+
+<p><strong>Some relevant works:</strong></p>
+
+<ol>
+  <li><a href="http://www.cs.toronto.edu/~fritz/absps/dh93.pdf" target="\_blank">Feudal Reinforcement Learning (1993)</a></li>
+  <li><a href="https://www.sciencedirect.com/science/article/pii/S0004370299000521" target="\_blank">Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning (1999)</a></li>
+  <li><a href="https://arxiv.org/abs/1703.01161" target="\_blank">FeUdal Networks for Hierarchical Reinforcement Learning (2017)</a></li>
+  <li><a href="http://papers.nips.cc/paper/6233-hierarchical-deep-reinforcement-learning-integrating-temporal-abstraction-and-intrinsic-motivation.pdf" target="\_blank">Hierarchical Deep Reinforcement Learning:Integrating Temporal Abstraction andIntrinsic Motivation (2016)</a></li>
+  <li><a href="https://bair.berkeley.edu/blog/2017/10/06/soft-q-learning/" target="\_blank">Learning Diverse Skills via Maximum Entropy Deep Reinforcement Learning (2017)</a></li>
+  <li><a href="https://arxiv.org/pdf/1611.01796.pdf" target="\_blank">Modular Multitask Reinforcement Learning with Policy Sketch (2017)</a></li>
+  <li><a href="https://arxiv.org/abs/1811.06889" target="\_blank">On the Complexity of Exploration in Goal-Driven Navigation (2018)</a></li>
+  <li><a href="https://arxiv.org/abs/1805.10309" target="\blank">Learning Self-Imitating Diverse Policies (2018)</a></li>
+</ol>
+
+<hr>
+
+<h4 id="large-scale-scalable-machine-learning">Large-scale (scalable) Machine Learning<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#large-scale-scalable-machine-learning" aria-label="Anchor link for: large scale scalable machine learning" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<p><strong>Contact person:</strong> <a href="http://www.cs.cmu.edu/~hzhang2/" target="\_blank">Hao Zhang</a></p>
+
+<p>Machine Learning nowadays has been applied in extremely large dataset, posing many challenges on existing models and algorithms – lack of scalability, lack of guarantee of convergence, inefficient inference, difficulty of programming over big data and big models, etc. This topic will allow us to explore different directions in large-scale machine learning to address the aforementioned problems:</p>
+
+<ul>
+  <li><strong>Data parallelism and model parallelism</strong> [1-4]</li>
+  <li><strong>Large batch SGD, SGD with staleness</strong> [3, 4, 5, 7]</li>
+  <li><strong>Efficient Training/inference of Dynamic Neural Networks</strong> [6, 8]</li>
+  <li><strong>Scalable ML Systems</strong> [1-8]</li>
+</ul>
+
+<p><strong>References</strong>:</p>
+
+<ol>
+  <li><a href="https://www.cs.toronto.edu/~ranzato/publications/DistBeliefNIPS2012_withAppendix.pdf" target="\_blank">Large Scale Distributed Deep Networks</a>.</li>
+  <li><a href="https://medium.com/@Petuum/intro-to-distributed-deep-learning-systems-a2e45c6b8e7" target="\_blank">Intro to Distributed Deep Learning Systems</a>.</li>
+  <li><a href="https://www.petuum.com/pdf/SSPTable_NIPS2013.pdf" target="\_blank">More Effective Distributed ML via a Stale Synchronous Parallel Parameter Server</a>.</li>
+  <li><a href="https://arxiv.org/abs/1706.02677" target="\_blank">Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour</a>.</li>
+  <li><a href="https://arxiv.org/abs/1812.06162" target="\_blank">An Empirical Model of Large-Batch Training</a>.</li>
+  <li><a href="https://www.usenix.org/system/files/conference/atc18/atc18-xu-shizhen.pdf" target="\_blank">Cavs: An Efficient Runtime System for Dynamic Neural Networks</a>.</li>
+  <li><a href="https://arxiv.org/abs/1810.03264" target="\_blank">Toward Understanding the Impact of Staleness in Distributed Machine Learning</a>.</li>
+  <li><a href="https://arxiv.org/abs/1705.07860" target="\_blank">On-the-fly Operation Batching in Dynamic Computation Graphs</a>.</li>
+</ol>
+
+<hr>
+
+<h4 id="machine-learning-onwith-graphs">Machine Learning on/with Graphs<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#machine-learning-onwith-graphs" aria-label="Anchor link for: machine learning onwith graphs" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<p><strong>Contact person:</strong> <a href="http://www.cs.cmu.edu/~hzhang2/" target="\_blank">Hao Zhang</a></p>
+
+<p>Machine learning on graphs is an important and ubiquitous task with applications ranging from drug design to friendship recommendation in social networks. The primary challenge in this domain is finding a way to represent, or encode, graph structure so that it can be easily exploited by machine learning models. Traditionally, machine learning approaches relied on user-defined heuristics to extract features encoding structural information about a graph (e.g., degree statistics or kernel functions). However, recent years have seen a surge in approaches that automatically learn to encode graph structure into low-dimensional embeddings, using techniques based on deep learning and nonlinear dimensionality reduction. Below are a few interesting topics that have been developed very actively in recently years and worth some explorations in the class:</p>
+
+<ul>
+  <li><strong>Deep Generative Models for Graphs</strong> [1, 2, 4]</li>
+  <li><strong>Combing Graphical Models with Neural Networks</strong> [1-5]</li>
+  <li><strong>Semi-supervised Learning on Graph-structured Data</strong> [3, 5]</li>
+</ul>
+
+<p><strong>References</strong>:</p>
+
+<ol>
+  <li><a href="https://arxiv.org/abs/1803.03324" target="\_blank">Learning Deep Generative Models of Graphs</a>.</li>
+  <li><a href="https://cs.stanford.edu/people/jure/pubs/graphrnn-icml18.pdf" target="\_blank">GraphRNN: Generating Realistic Graphs with Deep Auto-regressive Models</a>.</li>
+  <li><a href="https://arxiv.org/abs/1609.02907" target="\_blank">Semi-Supervised Classification with Graph Convolutional Networks</a>.</li>
+  <li><a href="https://arxiv.org/pdf/1812.01070.pdf" target="\_blank">Learning Multimodal Graph-to-graph Translation for Molecular Optimization</a>.</li>
+  <li><a href="https://arxiv.org/pdf/1709.05584.pdf" target="\_blank">Representation Learning on Graphs: Methods and Applications</a>.</li>
+</ol>
+
+<hr>
+
+<h4 id="automated-machine-learning">Automated Machine Learning<a class="anchorjs-link " href="https://sailinglab.github.io/pgm-spring-2019/project/#automated-machine-learning" aria-label="Anchor link for: automated machine learning" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<p><strong>Contact person:</strong> <a href="http://www.cs.cmu.edu/~hzhang2/" target="\_blank">Hao Zhang</a></p>
+
+<p>The goal of AutoML is to make machine learning more accessible by automatically generating a data analysis pipeline that can include data pre-processing, feature selection, and feature engineering methods along with machine learning methods and parameter settings that are optimized for your data. Recently we have witnessed very active development toward a few directions such as hyperparameter searching, neural architecture search, etc. However, most of the existing methods only address a very small component from an end-to-end ML pipeline (from data to values), and they usually exhibit unsatisfactory efficiency and scalability.</p>
+
+<ul>
+  <li><strong>Efficient Search for Better Model Architectures, Optimization Methods, or Both</strong> [1-5, 7, 8, 9]</li>
+  <li><strong>Searching for Better End-to-end ML Pipelines</strong> [7]</li>
+  <li><strong>AutoML (for) Systems</strong> [6, 9]</li>
+</ul>
+
+<p><strong>References</strong>:</p>
+
+<ol>
+  <li><a href="https://arxiv.org/abs/1812.00332" target="\_blank">ProxylessNAS: Direct Neural Architecture Search on Target Task and Hardware</a>.</li>
+  <li><a href="https://openreview.net/pdf?id=BJgK6iA5KX" target="\_blank">AutoLoss: Learning Discrete Schedules for Alternate Optimization</a>.</li>
+  <li><a href="https://arxiv.org/abs/1806.09055" target="\_blank">DARTS: Differentiable Architecture Search</a>.</li>
+  <li><a href="https://arxiv.org/abs/1709.07417" target="\_blank">Neural Optimizer Search with Reinforcement Learning</a>.</li>
+  <li><a href="https://arxiv.org/pdf/1802.07191.pdf" target="\_blank">Neural Architecture Search with Bayesian Optimisation and Optimal Transport</a>.</li>
+  <li><a href="https://www.usenix.org/system/files/osdi18-moritz.pdf" target="\_blank">Ray: A Distributed Framework for Emerging AI Applications</a>.</li>
+  <li><a href="https://arxiv.org/pdf/1805.09501.pdf" target="\_blank">AutoAugment: Learning Augmentation Policies from Data</a>.</li>
+  <li><a href="https://arxiv.org/abs/1807.11626" target="\_blank">MnasNet: Platform-Aware Neural Architecture Search for Mobile</a>.</li>
+  <li><a href="https://arxiv.org/abs/1706.04972" target="\_blank">Device Placement Optimization with Reinforcement Learning</a>.</li>
+</ol>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Probabilistic Graphical Models</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">SAILING lab</li><li><a class="u-email" href="mailto:10708-instructor@cs.cmu.edu">10708-instructor@cs.cmu.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/sailinglab" target="_blank"><i class="fab fa-github"></i> <span class="username">sailinglab</span></a></li><li><a href="https://www.youtube.com/channel/UCim-E6bNz7lUyKZwhgN6S1A" target="_blank"><i class="fab fa-youtube"></i> <span class="username">YouTube</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>© Copyright 2020 Carnegie Mellon University. <br>
+        Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="./10-708-projects-course-page_files/jquery-1.12.4.min.js.download"></script>
+
+<!-- Load Common JS -->
+<script src="./10-708-projects-course-page_files/common.js.download"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="./10-708-projects-course-page_files/katex.min.css">
+<script src="./10-708-projects-course-page_files/katex.min.js.download"></script>
+<script src="./10-708-projects-course-page_files/katex.js.download"></script>
+
+
+
+<!-- Load Anchor JS -->
+<script src="./10-708-projects-course-page_files/anchor.min.js.download"></script>
+<script>
+  anchors.options.visible = 'hover';
+  anchors.add('article h2, article h3, article h4, article h5, article h6');
+</script>
+
+
+
+<!-- Adjust LaTeX JS -->
+<script src="./10-708-projects-course-page_files/latex.js.download"></script>
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="./10-708-projects-course-page_files/fontawesome-all.min.css">
+<link rel="stylesheet" href="./10-708-projects-course-page_files/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-131744305-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  
+
+
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg></body></html>
