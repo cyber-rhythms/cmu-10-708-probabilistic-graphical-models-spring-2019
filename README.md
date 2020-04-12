@@ -18,9 +18,9 @@ that contains the course schedule, in case the link is no longer hosted by CMU.
 2) 10-708-probabilistic-graphical-models-coursepage folder - the relevant html files for the
 above complete html document. 
 
-3) homework-assignments folder - contains 4 homework assignment materials.
+3) homework-assignments folder - contains 4 homework assignment materials*.
 
-4) lecture-slides folder - contains all the lecture slides in PDF form. File names have been
+4) lecture-slides folder - contains all the lecture slides in PDF form*. File names have been
 "cleaned" and associated with a date for ease of association to the main course page.
 
 5) lecture-sldies-annotated folder - contains version of the lecture slides that have been
@@ -56,3 +56,35 @@ has been placed in "lecture-slides" to reflect this.
 "Lecture #5(skipped): Parameter learning in fully observable Bayesian Networks" video is not
 in the playlist, as it was skipped, as indicated on the course page. 
 
+Homework assignments - these comprise a mix of theoretical, maths-style derivation questions; and exercises in which a dataset is given and a particular algorithm needs to be implemented in code.
+
+For someone who was enrolled as a CMU student, the derivations would be marked by a teaching
+assistant, and the code implementations would be marked by a scripted automatic grading system (Gradescope).
+
+For these to have value to those self-studying, it needs to be ascertained whether it is possible
+to do these exercises without these university facilities. Here are my comments from a preliminary audit of the materials.
+
+HW1 - Mix of exercises taken from Koller and Friedman(2009); and implementation of junction tree algorithm and EM
+algorithm for parameter estimation of HMM. Script skeletons are provided and student needs to fill in the blanks for submission to Gradescope.
+
+HW2 - Mix of derivations and code implementations of algorithms from selected papers (HMM and CRF for POS tagging;
+variational EM for LDA on wikipedia corpus (optional); Metropolis-Hastings algorithm for sports data).
+Results are expected as a PDF write-up.
+
+HW3 - Mix of derviations and guided code implementations (Wake-Sleep Algorithm) using provided Jupyter notebooks.
+Code is used to create results that are to be written up. Results are expected as a submitted Jupyter/Colab notebook.
+
+HW4 - Mixture of theoretical derivations and empirical questions. Pre-written code is provided in a Colab/Jupyter Notebook. Expected
+to run tests, interpret results. No coding implementation questions that need to be submitted to an autograder.
+
+Homework assignment audit conclusion: without having done the exercises, it does seem firmly
+within the realm of possibility for a motivated student to undertake these exercises and derive value
+from them.
+
+For derivation questions - these generally tend to be doable, and success here depends on how well one has assimilated the contents of the lectures. 
+
+For code/implementations of algorithms that would normally be marked by Gradescope - there are often mathematical constraints on the behaviour of the output of the algorithm that allow one to check if it is working correctly. The papers on which the exercises are based will contain a lot of supporting information to assist also. A source of "ground-truth" might be using a complete implementation of an algorithm in an external package ONLY as a checking mechanism. One could then take test input data, run our hand-coded algorithm on that data; and compare the results, against the external package implementation, provided that there are sufficient grounds to enable comparison.
+
+For empirical write-ups - there are often a lot of the clues in the context of the problem that may be helpful.
+
+Ultimately, the student doing these exercises without university support will indeed be working "blind", but the greater takeaway is that if the student is successful, the skills picked up will be immensely beneficial. Real-world problems have no instructor, nor automated systems telling the student whether they have indeed "scored the correct answer". That places the onus on the student to go and assess whether they have indeed gotten the right answer, and is an arguably greater test of resourcefulness.
