@@ -29,15 +29,15 @@ annotated by the instructor.
 6) notes folder - a placeholder folder as a reminder that there exist notes scribed by students
 of the course. These are all available as distil style blogs at the following link:
 
-  https://sailinglab.github.io/pgm-spring-2019/notes/
+     https://sailinglab.github.io/pgm-spring-2019/notes/
 
-  Each blog/lecture notes page is assembled from the following associated github repo:
+     Each blog/lecture notes page is assembled from the following associated github repo:
 
-  https://github.com/sailinglab/pgm-spring-2019
+     https://github.com/sailinglab/pgm-spring-2019
 
 7) suggested-projects folder - contains an archived complete html webpage of the following link:
 
-  https://sailinglab.github.io/pgm-spring-2019/project/
+     https://sailinglab.github.io/pgm-spring-2019/project/
 
 Remarks:
 
