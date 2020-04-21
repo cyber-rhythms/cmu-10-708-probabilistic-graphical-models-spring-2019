@@ -2,11 +2,11 @@
 
 A fully organised, integrity checked repo containing all the lecture materials available at:
 
-https://sailinglab.github.io/pgm-spring-2019/lectures/
+     https://sailinglab.github.io/pgm-spring-2019/lectures/
 
 The course videos that accompany the contents of this repo are available here:
 
-https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%220f44b4d7-fb4e-49eb-b88d-a9d00125e1b3%22&maxResults=50
+     https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%220f44b4d7-fb4e-49eb-b88d-a9d00125e1b3%22&maxResults=50
 
 The video playlist has been cross-checked against the coursepage for completeness. See remarks.
 
