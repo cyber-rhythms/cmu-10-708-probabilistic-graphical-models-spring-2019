@@ -47,6 +47,14 @@ has been placed in "lecture-slides" to reflect this.
 "Lecture #5(skipped): Parameter learning in fully observable Bayesian Networks" video is not
 in the playlist, as it was skipped, as indicated on the course page. 
 
+There exist a set of accompanying notes for the lectures scribed by students of the course. These are all available as distil style blogs at the following link:
+
+     https://sailinglab.github.io/pgm-spring-2019/notes/
+
+Each blog/lecture notes page is assembled from the following associated github repo:
+
+     https://github.com/sailinglab/pgm-spring-2019
+
 **Homework assignments**
 
 These comprise a mix of theoretical, maths-style derivation questions; and exercises in which a dataset is given and a particular algorithm needs to be implemented in code.
@@ -77,3 +85,5 @@ For code/implementations of algorithms that would normally be marked by Gradesco
 For empirical write-ups - there are often a lot of the clues in the context of the problem that may be helpful.
 
 Ultimately, the student doing these exercises without university support will indeed be working "blind", but the greater takeaway is that if the student is successful, the skills picked up will be immensely beneficial. In particular, the skills this and other CMU courses seem to be teaching are the ability to be able to understand the inner workings of a model in a machine learning paper and reproduce it in code quickly. Furthermore, real-world problems have no instructor, nor automated systems telling the student whether they have indeed "scored the correct answer". That places the onus on the student to go and assess whether they have indeed gotten the right answer, and is an arguably greater test of resourcefulness.
+
+Pending - Consider archiving the notes for reference
