@@ -10,14 +10,21 @@ The assignment is an adaptation of the Bayesian hierarchical model of Baio and B
 
 The contents of this directory are as follows:
 
-1. `metropolis.py` - the main script for running the Metropolis algorithm.
-2. `premier_league_2013_2014.dat` - 2013-2014 Premier League data. 
-3. `PRNG_state.npy` - a pseudo-random number generator (PRNG) state file for reproducible results.
-4. `requirements.txt` - to ensure compatibility.
-5. `MCMC analysis.ipynb` - a supplementary Jupyter notebook used to generate a posterior histogram and scatter plot of estimated posterior means of the parameters.
-6. `/results` - a directory containing the output of the script `metropolis.py` and the Jupyter notebook `MCMC analysis.ipynb`.
+1. `environment.yml` - for users wishing to run the code in a conda environment.
+2. `requirements.txt` - for users wishing to run the code using a Python virtual environment.
+3. `metropolis.py` - the main script for running the Metropolis algorithm.
+4. `premier_league_2013_2014.dat` - 2013-2014 Premier League data. 
+5. `PRNG_state.npy` - a pseudo-random number generator (PRNG) state file for reproducible results.
+6. `MCMC analysis.ipynb` - a supplementary Jupyter notebook used to generate a posterior histogram and scatter plot of estimated posterior means of the parameters.
+7. `/results` - a directory containing the output of the script `metropolis.py` and the Jupyter notebook `MCMC analysis.ipynb`.
 
 ## Getting started.
+
+### Using conda.
+
+If you would like to use a 
+
+### Using pip.
 
 ## Running the code from scratch.
 
