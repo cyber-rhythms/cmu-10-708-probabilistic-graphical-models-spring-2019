@@ -2,33 +2,39 @@
 
 A fully organised, integrity checked repo containing all the lecture materials available at:
 
-     https://sailinglab.github.io/pgm-spring-2019/lectures/
+https://sailinglab.github.io/pgm-spring-2019/lectures/
 
 The course videos that accompany the contents of this repo are available here:
 
-     https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%220f44b4d7-fb4e-49eb-b88d-a9d00125e1b3%22&maxResults=50
+https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%220f44b4d7-fb4e-49eb-b88d-a9d00125e1b3%22&maxResults=50
 
 The video playlist has been cross-checked against the coursepage for completeness. See remarks.
 
-By folder, the repo contains:
+For those looking to work through this course by themselves, this repo contains:
 
 1) `10-708-probabilistic-graphical-models-coursepage.html` - an archived complete html document
 that contains the course schedule, in case the link is no longer hosted by CMU.
 
-2) `10-708-probabilistic-graphical-models-coursepage` folder - the relevant html files for the
+2) `/10-708-probabilistic-graphical-models-coursepage` folder - the relevant html files for the
 above complete html document. 
 
-3) `homework-assignments` folder - contains 4 homework assignment materials*.
+3) /`homework-assignments` folder - contains 4 homework assignment materials*.
 
-4) `lecture-slides` folder - contains all the lecture slides in PDF form*. File names have been
+4) `/lecture-slides` folder - contains all the lecture slides in PDF form*. File names have been
 "cleaned" and associated with a date for ease of association to the main course page.
 
-5) `lecture-sldies-annotated` folder - contains version of the lecture slides that have been
+5) `/lecture-slides-annotated` folder - contains version of the lecture slides that have been
 annotated by the instructor.
 
-6) `suggested-projects` folder - contains an archived complete html webpage of the following link:
+6) `/suggested-projects` folder - contains an archived complete html webpage of the following link:
 
-     https://sailinglab.github.io/pgm-spring-2019/project/
+https://sailinglab.github.io/pgm-spring-2019/project/
+
+This repo also contains the work I produced whilst working through this by myself, such as completed assignments write-ups, scripts, and visualisations.
+
+7) `/completed-assignments` - my write-ups to each of the 4 homework assignments, and also documented scripts and visualisations.
+
+8) `10-708-lecture-summaries.pdf` - my own summary of the lecture material covered in each lecture.
 
 **Remarks**:
 
@@ -49,11 +55,11 @@ in the playlist, as it was skipped, as indicated on the course page.
 
 There exist a set of accompanying notes for the lectures scribed by students of the course. These are all available as distil style blogs at the following link:
 
-     https://sailinglab.github.io/pgm-spring-2019/notes/
+https://sailinglab.github.io/pgm-spring-2019/notes/
 
 Each blog/lecture notes page is assembled from the following associated github repo:
 
-     https://github.com/sailinglab/pgm-spring-2019
+https://github.com/sailinglab/pgm-spring-2019
 
 **Homework assignments**
 
@@ -86,4 +92,4 @@ For empirical write-ups - there are often a lot of the clues in the context of t
 
 Ultimately, the student doing these exercises without university support will indeed be working "blind", but the greater takeaway is that if the student is successful, the skills picked up will be immensely beneficial. In particular, the skills this and other CMU courses seem to be teaching are the ability to be able to understand the inner workings of a model in a machine learning paper and reproduce it in code quickly. Furthermore, real-world problems have no instructor, nor automated systems telling the student whether they have indeed "scored the correct answer". That places the onus on the student to go and assess whether they have indeed gotten the right answer, and is an arguably greater test of resourcefulness.
 
-Pending - Consider archiving the notes for reference
+Pending - Consider archiving the notes for reference.
