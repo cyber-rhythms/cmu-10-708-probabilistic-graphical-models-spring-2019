@@ -1,4 +1,4 @@
-## Posterior inference in a Bayesian hierarchical model using the Metropolis algorithm: Sports analytics with 2013-2014 Premier League results.
+## Posterior inference in a Bayesian hierarchical model using the Metropolis algorithm: Sports analytics with 2013-2014 English Premier League football results.
 
 This directory contains the materials produced when completing "Q4: Markov Chain Monte Carlo" of the assignment "10-708 PGM (Spring 2019): Homework 2 v1.1", whose rubric can be found [here](https://github.com/cyber-rhythms/cmu-10-708-probabilistic-graphical-models-spring-2019/blob/master/homework-assignments/hw-2/hw-2-v1.1.pdf)
 
@@ -20,13 +20,19 @@ The contents of this directory are as follows:
 
 ## Getting started.
 
-In order for the script to run appropriately, using conda or Python virtual environments is recommended.
+In order for the script to run appropriately, use conda (recommended) or Python virtual environments.
 
 ### Using conda.
 
-Create a [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) environment using the provided `environment.yml` file. Open a terminal or Anaconda3 prompt and run `conda env create -f environment.yml`.
+Download the `environment.yml` file to an appropriate working directory. Create a [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) environment using the provided `environment.yml` file. That is, open a terminal or Anaconda3 prompt and run `conda env create -f environment.yml`. Then activate the environment by running `conda activate hw2-10-708`.
 
-### Using pip.
+### Using a Python (3.8.8) virtual environment.
+
+Download the `requirements.txt` file to an appropriate working directory. Open a terminal, activate the Python virtual environment and run the following command `pip install -r requirements.txt`. The relevant packages used to run the script should be installed.
+
+tbc
+
+
 
 ## Running the code from scratch.
 
