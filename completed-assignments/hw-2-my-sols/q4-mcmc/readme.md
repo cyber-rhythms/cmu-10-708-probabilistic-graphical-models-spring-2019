@@ -23,7 +23,7 @@ The contents of this directory are as follows:
 
 ## Running the code from scratch.
 
-1.  Place the script `metropolis.py`, the data `premier_league_2013_2014.dat`, and the PRNG state file `PRNG_state.npy` into the *same working directory* of your choice.
+1.  Place the script `metropolis.py`, the data `premier_league_2013_2014.dat`, and the PRNG state file `PRNG_state.npy` into any working directory of your choice. However, please ensure that these three files are placed in the *same working directory*, otherwise the script will not execute as intended.
 
 2. Execute the script by opening a terminal with Python installed and running `python metropolis.py`
 
@@ -35,7 +35,7 @@ The contents of this directory are as follows:
 
 ## References
 
-[1] Gianluca Baio and Marta Blangiardo. Bayesian hierarchical model for the prediction of football results.
+[1](https://discovery.ucl.ac.uk/id/eprint/16040/1/16040.pdf) Gianluca Baio and Marta Blangiardo. Bayesian hierarchical model for the prediction of football results.
 Journal of Applied Statistics, 37(2):253-264, 2010.
 
 
