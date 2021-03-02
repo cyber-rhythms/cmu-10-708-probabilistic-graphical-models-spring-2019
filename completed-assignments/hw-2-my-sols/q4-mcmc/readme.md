@@ -4,9 +4,11 @@ This directory contains the materials produced when completing "Q4: Markov Chain
 
 The assignment rubric is located [here](https://github.com/cyber-rhythms/cmu-10-708-probabilistic-graphical-models-spring-2019/blob/master/homework-assignments/hw-2/hw-2-v1.1.pdf).
 
-Pseudocode, mathematical derivations, and analysis are located in the Jupyter notebook [here].
+The Bayesian hierarchical model specification, pseudocode, mathematical derivations, and analysis are located in my write-up of the assignment in the Jupyter notebook [here].
 
 The assignment is an adaptation of the Bayesian hierarchical model of Baio and Blangiardo (2010) to sports data for the 2013-2014 Premier League football results, rather than Italian Serie A results.
+
+### Directory contents.
 
 The contents of this directory are as follows:
 
@@ -25,7 +27,16 @@ The contents of this directory are as follows:
 
 2. Execute the script by opening a terminal with Python installed and running `python metropolis.py`
 
-3. The script will create a new directory `/results` in your current working directory (where you have saved the files specified in step 1.). It will then save a total of 12 `.npz` files using the 
+3. Executing the script `metropolis.py` will create a new directory `/results` in your current working directory (where you have saved the files specified in step 1.). Running this script will generate:
+  * `metropolis-log.txt` - a log file containing the `stdout` of the script `metropolis.py`.
+  
+  * 12 .`npz` files - 
+  
+  * 12 `.png` traceplots corresponding to each setting of the MCMC parameters.
+  
+  * 
+
+4. After the script `metropolis.py` has completed, open the Jupyter notebook `MCMC analysis.ipynb` and run each of the code cells to generate 
 
 ### Plots.
 
