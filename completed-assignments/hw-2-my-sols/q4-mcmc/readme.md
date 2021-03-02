@@ -20,9 +20,11 @@ The contents of this directory are as follows:
 
 ## Getting started.
 
+In order for the script to run appropriately, using conda or Python virtual environments is recommended.
+
 ### Using conda.
 
-If you would like to use a 
+Create a [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) environment using the provided `environment.yml` file. Open a terminal or Anaconda3 prompt and run `conda env create -f environment.yml`.
 
 ### Using pip.
 
