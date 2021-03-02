@@ -35,8 +35,8 @@ The contents of this directory are as follows:
 
 ## References
 
-[1](https://discovery.ucl.ac.uk/id/eprint/16040/1/16040.pdf) Gianluca Baio and Marta Blangiardo. Bayesian hierarchical model for the prediction of football results.
-Journal of Applied Statistics, 37(2):253-264, 2010.
+[Gianluca Baio and Marta Blangiardo. Bayesian hierarchical model for the prediction of football results.
+Journal of Applied Statistics, 37(2):253-264, 2010.](https://discovery.ucl.ac.uk/id/eprint/16040/1/16040.pdf)
 
 
 
