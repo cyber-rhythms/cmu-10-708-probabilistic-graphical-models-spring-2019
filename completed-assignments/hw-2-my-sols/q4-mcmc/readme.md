@@ -27,14 +27,7 @@ The contents of this directory are as follows:
 
 2. Execute the script by opening a terminal with Python installed and running `python metropolis.py`
 
-3. Executing the script `metropolis.py` will create a new directory `/results` in your current working directory (where you have saved the files specified in step 1.). Running this script will generate:
-  * `metropolis-log.txt` - a log file containing the `stdout` of the script `metropolis.py`.
-  
-  * 12 .`npz` files - 
-  
-  * 12 `.png` traceplots corresponding to each setting of the MCMC parameters.
-  
-  * 
+3. Executing the script `metropolis.py` will create a new directory `/results` in your current working directory (where you have saved the files specified in step 1.). Running this script will generate a log-file `metropolis-log.txt` containing the `stdout`; 12 `.npz` files and their 12 corresponding `.png` traceplots; and finally, `acceptance-rate-table.png`, a table of empirical acceptance rates for each run of the Metropolis algorithm.
 
 4. After the script `metropolis.py` has completed, open the Jupyter notebook `MCMC analysis.ipynb` and run each of the code cells to generate 
 
