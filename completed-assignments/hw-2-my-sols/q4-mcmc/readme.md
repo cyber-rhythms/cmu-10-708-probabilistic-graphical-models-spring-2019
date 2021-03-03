@@ -24,29 +24,31 @@ In order for the script to run appropriately, use conda (recommended) or Python 
 
 ### Using conda.
 
-Download the `environment.yml` file to an appropriate working directory. Create a [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) environment using the provided `environment.yml` file. That is, open a terminal or Anaconda3 prompt and run `conda env create -f environment.yml`. Then activate the environment by running `conda activate hw2-10-708`.
+Download the `environment.yml` file to an appropriate working directory. Create a [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) environment using the provided `environment.yml` file. That is, open a terminal or Anaconda3 prompt and run `conda env create -f environment.yml`. Then activate the environment by running `conda activate hw2-10-708`. You can now run the script from this terminal.
 
 ### Using a Python (3.8.8) virtual environment.
 
-Download the `requirements.txt` file to an appropriate working directory. Open a terminal, activate the Python virtual environment and run `pip install -r requirements.txt`. The relevant packages used to run the script should be installed.
+Download the `requirements.txt` file to an appropriate working directory. Open a terminal, activate the Python virtual environment and run `pip install -r requirements.txt`. The relevant packages used to run the script should be installed. You can now run the script from this terminal.
 
 ### Packages used in the script.
 
 For those wishing to run the script using other means, the core packages used in the script are the following:
 
-> matplotlib==3.3.4
-> scipy==1.5.2
-> numpy==1.19.2
+> `matplotlib==3.3.4`
+> 
+> `scipy==1.5.2`
+> 
+> `numpy==1.19.2`
 
 ## Running the code from scratch.
 
-1.  Place the script `metropolis.py`, the data `premier_league_2013_2014.dat`, and the PRNG state file `PRNG_state.npy` into any working directory of your choice. However, please ensure that these three files are placed in the *same working directory*, otherwise the script will not execute as intended.
+1.  Place the script `metropolis.py`, the data `premier_league_2013_2014.dat`, and the PRNG state file `PRNG_state.npy` into a working directory of your choice. It is assumed that this working directory is the same as where you placed the `environment.yml` or `requirements.txt` file. Please ensure that the former three files are placed in the *same working directory*, otherwise the script will not execute as intended.
 
-2. Execute the script by opening a terminal with Python installed and running `python metropolis.py`
+2. Execute the script by running `python metropolis.py` in your terminal.
 
-3. Executing the script `metropolis.py` will create a new directory `/results` in your current working directory (where you have saved the files specified in step 1.). Running this script will generate a log-file `metropolis-log.txt` containing the `stdout` of the script; 12 `.npz` files and their 12 corresponding `.png` traceplots; and finally, `acceptance-rate-table.png`, a table of empirical acceptance rates for each run of the Metropolis algorithm.
+3. Executing the script `metropolis.py` will create a new sub-directory `/results` in your current working directory (where you have saved the files specified in step 1.). Running this script will generate a log-file `metropolis-log.txt` containing the `stdout` of the script; 12 `.npz` files and their 12 corresponding `.png` traceplots; and finally, `acceptance-rate-table.png`, a table of empirical acceptance rates for each run of the Metropolis algorithm.
 
-4. *After* the script `metropolis.py` has completed, open the Jupyter notebook `MCMC analysis.ipynb` and run each of the code cells. Doing this will cause `MCMC analysis.ipynb` to access the `/results` directory, and unpack `metropolis-results-sigma=0.005-t=50.npz`. It will then generate the required posterior histogram and scatter plot of estimated empirical means of the attacking and defence strength parameters for each of the Premier League teams. These visualisations will be saved as `posterior-density-histogram.png` and `scatter-plot-estimated-posterior-means.png` in the `/results` directory.
+4. *After* the script `metropolis.py` has completed, place the Jupyter notebook 'MCMC analysis.ipynb' in your current working directory, open the Jupyter notebook `MCMC analysis.ipynb` and run each of the code cells. Doing this will cause `MCMC analysis.ipynb` to access the `/results` sub-directory, and unpack `metropolis-results-sigma=0.005-t=50.npz`. It will then generate the required posterior histogram and scatter plot of estimated empirical means of the attacking and defence strength parameters for each of the Premier League teams. These visualisations will be saved as `posterior-density-histogram.png` and `scatter-plot-estimated-posterior-means.png` in the `/results` directory.
 
 ## Plots.
 
