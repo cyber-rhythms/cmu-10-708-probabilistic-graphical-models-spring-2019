@@ -15,8 +15,10 @@ The contents of this directory are as follows:
 3. `metropolis.py` - the main script for running the Metropolis algorithm.
 4. `premier_league_2013_2014.dat` - 2013-2014 Premier League data. 
 5. `PRNG_state.npy` - a pseudo-random number generator (PRNG) state file for use with Numpy, ensures reproducibility of the results.
-6. `MCMC analysis.ipynb` - a supplementary Jupyter notebook used to generate a posterior histogram and scatter plot of estimated posterior means of the parameters.
-7. `/results` - a directory containing the output of the script `metropolis.py` and the Jupyter notebook `MCMC analysis.ipynb`.
+6. `MCMC-suppl-visualisations.ipynb` - a supplementary Jupyter notebook used to generate a posterior histogram and scatter plot of estimated posterior means of the parameters.
+7. `/results` - sub-directory containing 12 `.npz` files containing data from each of 12 runs of the Metropolis algorithm.
+8. `/logs` - a sub-directory containing 12 `.txt` files containing console messages output from each of 12 runs of the Metropolis algorithm.
+9. `/assignment_figures` - a sub-directory containing 12 `.png` traceplots as per assignment requirements, a `
 
 ## Getting started.
 
