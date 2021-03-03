@@ -20,7 +20,7 @@ The contents of this directory are as follows:
 
 ## Getting started.
 
-In order for the script to run appropriately, use conda (recommended) or Python virtual environments.
+In order for the script to run appropriately, use conda (recommended) or Python virtual environments. The packages used in the script are specfied for those wishing to run the script using other meanns.
 
 ### Using conda.
 
@@ -28,11 +28,15 @@ Download the `environment.yml` file to an appropriate working directory. Create 
 
 ### Using a Python (3.8.8) virtual environment.
 
-Download the `requirements.txt` file to an appropriate working directory. Open a terminal, activate the Python virtual environment and run the following command `pip install -r requirements.txt`. The relevant packages used to run the script should be installed.
+Download the `requirements.txt` file to an appropriate working directory. Open a terminal, activate the Python virtual environment and run `pip install -r requirements.txt`. The relevant packages used to run the script should be installed.
 
-tbc
+### Packages used in the script.
 
+For those wishing to run the script using other means, the core packages used in the script are the following:
 
+> matplotlib==3.3.4
+> scipy==1.5.2
+> numpy==1.19.2
 
 ## Running the code from scratch.
 
