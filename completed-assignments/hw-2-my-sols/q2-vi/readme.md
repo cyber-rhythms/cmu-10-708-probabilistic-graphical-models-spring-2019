@@ -1,5 +1,4 @@
-## Variational expectation-maximisation (vEM) for inferring Wikipedia topics in a latent Dirichlet allocation (LDA) model 
-augmented with a hidden Markov model (HMM) for sequential topic transitions:
+## Inferring Wikipedia topics in a latent Dirichlet allocation (LDA) model augmented with a hidden Markov model (HMM) for sequential topic transitions, using variational expectation-maximisation.
 
 This directory contains the materials produced when completing "Q2: Variational inference" of the assignment
 "10-708 PGM (Spring 2010): Homework 2 v1.1", whose rubric can be found [here](https://github.com/cyber-rhythms/cmu-10-708-probabilistic-graphical-models-spring-2019/blob/master/homework-assignments/hw-2/hw-2-v1.1.pdf)
@@ -15,7 +14,7 @@ and hence sequentiality of topic transitions. This is then applied to the Wikipe
 The contents of this directory are as follows:
 
 1. `environment.yml` - for users wishing to run the code in a conda environment.
-2. 'requiremnts.txt` - for users wishing to run the code in a Python virtual environment.
+2. `requiremnts.txt` - for users wishing to run the code in a Python virtual environment.
 3. `/scripts` 
 
 
