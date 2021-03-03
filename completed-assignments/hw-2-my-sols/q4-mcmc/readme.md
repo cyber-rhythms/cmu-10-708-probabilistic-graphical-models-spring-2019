@@ -16,9 +16,9 @@ The contents of this directory are as follows:
 4. `premier_league_2013_2014.dat` - 2013-2014 Premier League data. 
 5. `PRNG_state.npy` - a pseudo-random number generator (PRNG) state file for use with Numpy, ensures reproducibility of the results.
 6. `MCMC-suppl-visualisations.ipynb` - a supplementary Jupyter notebook used to generate a posterior histogram and scatter plot of estimated posterior means of the parameters.
-7. `/results` - sub-directory containing 12 `.npz` files containing data from each of 12 runs of the Metropolis algorithm.
-8. `/logs` - a sub-directory containing 12 `.txt` files containing console messages output from each of 12 runs of the Metropolis algorithm.
-9. `/assignment_figures` - a sub-directory containing 12 `.png` traceplots as per assignment requirements, a `
+7. `/results` - sub-directory containing `.npz` files output from the the main script. 
+8. `/logs` - a sub-directory containing `.txt` files containing console messages output from the main script.
+9. `/figures` - a sub-directory containing figures generated as per requirements of the assignment.
 
 ## Getting started.
 
@@ -44,15 +44,13 @@ numpy==1.19.2
 
 ## Running the code from scratch.
 
-1.  Place the script `metropolis.py`, the data `premier_league_2013_2014.dat`, and the PRNG state file `PRNG_state.npy` into a working directory of your choice. It is assumed that this working directory is the same as where you placed the `environment.yml` or `requirements.txt` file. Please ensure that the former three files are placed in the *same working directory*, otherwise the script will not execute as intended.
+1.  Place the main script `metropolis.py`, the data `premier_league_2013_2014.dat`, and the PRNG state file `PRNG_state.npy` into a working directory of your choice. It is assumed that this working directory is the same as where you placed the `environment.yml` or `requirements.txt` file. Please ensure that the former three files are placed in the *same working directory*, otherwise the script will not execute as intended.
 
-2. Execute the script by running `python metropolis.py` in your terminal.
+2. Execute the main script by running `python metropolis.py` in your terminal.
 
-3. Executing the script `metropolis.py` will create a new sub-directory `/results` in your current working directory (where you have saved the files specified in step 1.). Running this script will generate a log-file `metropolis-log.txt` containing the `stdout` of the script; 12 `.npz` files and their 12 corresponding `.png` traceplots; and finally, `acceptance-rate-table.png`, a table of empirical acceptance rates for each run of the Metropolis algorithm.
+3. Executing the main script `metropolis.py` will create 3 new sub-directories in your current working directory (where you have saved the files specified in step 1). Those sub-directories are `/logs, `/results`, `/figures`. Furthermore, the script will produce `.txt` log files, which are saved in `/logs`; `.npz' results files, which are saved in `/results`, and a number of `.png` visualisations, which are saved in `/figures`. Further information on these can be found in the `readme.md` of the relevant sub-directories.
 
-4. *After* the script `metropolis.py` has completed, place the Jupyter notebook 'MCMC analysis.ipynb' in your current working directory, open the Jupyter notebook `MCMC analysis.ipynb` and run each of the code cells. Doing this will cause `MCMC analysis.ipynb` to access the `/results` sub-directory, and unpack `metropolis-results-sigma=0.005-t=50.npz`. It will then generate the required posterior histogram and scatter plot of estimated empirical means of the attacking and defence strength parameters for each of the Premier League teams. These visualisations will be saved as `posterior-density-histogram.png` and `scatter-plot-estimated-posterior-means.png` in the `/results` directory.
-
-## Plots.
+5. *After* the mainscript `metropolis.py` has terminated, place the Jupyter notebook `MCMC-suppl-visualisations.ipynb` in your current working directory, then open it and run each of the code cells. `MCMC-suppl-visualisations.ipynb` will access the `/results` sub-directory, and unpack `metropolis-results-sigma=0.005-t=50.npz`. It is important to wait until either the main script has terminated (or at least until `metropolis-results-sigma=0.005-t=50.npz` has been generated in `/results`) before running the code cells in the Jupyter notebook. The notebook will then generate the required posterior histogram and scatter plot of estimated empirical means of the attacking and defence strength parameters for each of the Premier League teams. These visualisations will be saved as `posterior-density-histogram.png` and `scatter-plot-estimated-posterior-means.png` in the `/results` directory.
 
 ## References
 
