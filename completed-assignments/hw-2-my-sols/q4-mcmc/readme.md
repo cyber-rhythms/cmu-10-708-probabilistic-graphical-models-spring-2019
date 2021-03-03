@@ -34,11 +34,11 @@ Download the `requirements.txt` file to an appropriate working directory. Open a
 
 For those wishing to run the script using other means, the core packages used in the script are the following:
 
-> `matplotlib==3.3.4`
-> 
-> `scipy==1.5.2`
-> 
-> `numpy==1.19.2`
+```
+matplotlib==3.3.4
+scipy==1.5.2 
+numpy==1.19.2
+```
 
 ## Running the code from scratch.
 
