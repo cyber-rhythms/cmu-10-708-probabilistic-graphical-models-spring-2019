@@ -4,7 +4,7 @@ This directory contains the materials produced when completing "Q4: Markov Chain
 
 The Bayesian hierarchical model specification, pseudocode, mathematical derivations, and analysis are located in my write-up of the assignment in the Jupyter notebook [here].
 
-The assignment is an adaptation of the Bayesian hierarchical model of Baio and Blangiardo (2010) to sports data for the 2013-2014 Premier League football results, rather than Italian Serie A results.
+The assignment is an adaptation of the Bayesian hierarchical model of Baio and Blangiardo (2010) to data for the 2013-2014 Premier League football results, rather than Italian Serie A results.
 
 ## Directory contents.
 
@@ -14,7 +14,7 @@ The contents of this directory are as follows:
 2. `requirements.txt` - for users wishing to run the code using a Python virtual environment.
 3. `metropolis.py` - the main script for running the Metropolis algorithm.
 4. `premier_league_2013_2014.dat` - 2013-2014 Premier League data. 
-5. `PRNG_state.npy` - a pseudo-random number generator (PRNG) state file for reproducible results.
+5. `PRNG_state.npy` - a pseudo-random number generator (PRNG) state file for use with Numpy, ensures reproducibility of the results.
 6. `MCMC analysis.ipynb` - a supplementary Jupyter notebook used to generate a posterior histogram and scatter plot of estimated posterior means of the parameters.
 7. `/results` - a directory containing the output of the script `metropolis.py` and the Jupyter notebook `MCMC analysis.ipynb`.
 
