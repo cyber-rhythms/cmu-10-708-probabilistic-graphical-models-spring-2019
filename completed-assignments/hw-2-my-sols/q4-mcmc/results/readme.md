@@ -19,9 +19,7 @@ Each `.npz` file is a dictionary-like object, and can be accessed for further an
 
 A description of each data-structure in a typical `.npz` file is as follows:
 
-1. `npzfile['eta_fixed']`
-
-A shape-(4,) ndarray. Hyperparameter initialisations.
+1. `npzfile['eta_fixed']` - A shape-(4,) ndarray. Hyperparameter initialisations.
 
 2. `npzfile['theta_burn_in_init']`
 
