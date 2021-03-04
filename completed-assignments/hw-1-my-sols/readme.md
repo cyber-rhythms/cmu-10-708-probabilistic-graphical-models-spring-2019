@@ -8,6 +8,6 @@ This directory contains my written solutions, accompanying figures, and scripts 
 
 2. `/scripts` - a sub-directory containing junction tree message passing scripts I wrote as part of the coding exercises in Q3 and Q4 of the assignment.
 
-3. `/ipynb_figures` - a sub-directory containing the figures reference in `hw-1-10-708.ipynb`.
+3. `/ipynb_figures` - a sub-directory containing the figures referenced in `hw-1-10-708.ipynb`.
 
 ## 
