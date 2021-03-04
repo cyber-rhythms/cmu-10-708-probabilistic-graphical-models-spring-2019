@@ -9,7 +9,7 @@ in my write-up of the assignment in the Jupyter notebook [here].
 The assignment adapts the original LDA model of Blei, Ng and Jordan (2003) by additionally using a hidden Markov model to account for word-order
 and hence sequentiality of topic transitions. This is then applied to the Wikipedia dataset.
 
-## Directory contents
+## Directory contents.
 
 The contents of this directory are as follows:
 
@@ -17,5 +17,13 @@ The contents of this directory are as follows:
 2. `requiremnts.txt` - for users wishing to run the code in a Python virtual environment.
 3. `/scripts` 
 
+## Getting started.
+
+## Running the code.
+
+## References.
+
+[David M Blei, Andrew Y Ng, and Michael I Jordan. Latent dirichlet allocation. Journal of machine
+Learning research, 3(Jan):993-1022, 2003.](https://jmlr.org/papers/volume3/blei03a/blei03a.pdf)
 
  
