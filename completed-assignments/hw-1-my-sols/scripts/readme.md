@@ -8,13 +8,11 @@ This directory contains the scripts I wrote as part of self-study when completin
 
 2. `requirements.txt`
 
-3. 
+3. `junction_tree.py`
 
-4 `junction_tree.py`
+4. `baum_welch.py`
 
-5 `baum_welch.py`
-
-6 `/figures`
+5. `/figures`
 
 ## Getting started.
 
