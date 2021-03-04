@@ -2,7 +2,7 @@
 
 This directory contains the materials I produced when completing "Q4: Markov Chain Monte Carlo" of the assignment "10-708 PGM (Spring 2019): Homework 2 v1.1", whose rubric can be found [here](https://github.com/cyber-rhythms/cmu-10-708-probabilistic-graphical-models-spring-2019/blob/master/homework-assignments/hw-2/hw-2-v1.1.pdf).
 
-The main script in this directory conducts posterior inference of team attack and defence strength (parameters) for 20 English Premier League football teams in a Bayesian hierarchical model, given a random initialisation of the prior means and variances (hyperparameters) on these attacking and defence strengths, and goals (observed data) from the 2013-2014 season. The posterior inference procedure uses a random walk Metropolis algorithm with a isotropic Gaussian symmetric proposal distribution, which is an instance of the more general class of simulation-based Markov chain Monte Carlo methods.
+###The main script in this directory conducts posterior inference of team attack and defence strength (parameters) for 20 English Premier League football teams in a Bayesian hierarchical model, given a random initialisation of the prior means and variances (hyperparameters) on these attacking and defence strengths, and goals (observed data) from the 2013-2014 season. The posterior inference procedure uses a random walk Metropolis algorithm with a isotropic Gaussian symmetric proposal distribution, which is an instance of the more general class of simulation-based Markov chain Monte Carlo methods.
 
 The Bayesian hierarchical model specification, pseudocode, mathematical derivations, and analysis whiuch pertain to this repository are located in my write-up of the assignment in the Jupyter notebook [here].
 
