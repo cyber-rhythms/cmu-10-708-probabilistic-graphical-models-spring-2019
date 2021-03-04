@@ -1,6 +1,6 @@
 ## Inferring Wikipedia topics in a latent Dirichlet allocation (LDA) model augmented with a hidden Markov model (HMM) for sequential topic transitions, using variational expectation-maximisation.
 
-This directory contains the materials I produced as part of seld-study when completing "Q2: Variational inference" of the assignment
+This directory contains the materials I produced as part of self-study when completing "Q2: Variational inference" of the assignment
 "10-708 PGM (Spring 2010): Homework 2 v1.1", whose rubric can be found [here](https://github.com/cyber-rhythms/cmu-10-708-probabilistic-graphical-models-spring-2019/blob/master/homework-assignments/hw-2/hw-2-v1.1.pdf)
 
 There are 2 main scripts in this directory:
