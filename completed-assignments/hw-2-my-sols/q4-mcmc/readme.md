@@ -6,9 +6,9 @@ This directory contains the materials I produced when completing "Q4: Markov Cha
 
 The Bayesian hierarchical model specification, mathematical derivations, Metropolis algorithm pseudocode, and analysis which pertain to this repository are located in my write-up of the assignment in the Jupyter notebook [here].
 
-The assignment is an adaptation of the Bayesian hierarchical model of Baio and Blangiardo (2010) to data for the 2013-2014 Premier League football results, rather than Italian Serie A results.
+The assignment is an adaptation of the Bayesian hierarchical model of Baio and Blangiardo (2010) [1] to data for the 2013-2014 Premier League football results, rather than Italian Serie A results.
 
-As per the requirements of the assignment, the Metropolis algorithm in this script was coded from scratch to develop familiarity with its inner workings.
+As per the requirements of the assignment, I implemented the Metropolis algorithm in this script from scratch to develop familiarity with its inner workings.
 
 ## Directory contents.
 
@@ -58,12 +58,24 @@ numpy==1.19.2
 
 ## Directions for further exploration.
 
+As the remit of the assignment was limited, some ways I could extend the implementation/analysis in this model to develop further familiarity with MCMC methods or Bayesian statistics are:
+
+1. Assessing a greater range for the isotropic Gaussian proposal standard deviation, and using the empirical acceptance rate to tune this hyperparameter. Evaluate against theoretical literature such as [2] concerning optimal acceptance rates for isotropic Gaussian proposal distributions.
+
+2. Adapting the posterior inference procedure to additionally infer the hyperparameters, or opting to use the sum-to-zero constraint on the parameters for identifiability (as in [1]) rather than the corner constraint as mandated by the assignment.
+
+3. Engaging more deeply with various MCMC empirical convergence diagnostics, such as using autocorrelation plots, nonparametric stationarity tests, or methods based in renewal theory to monitor convergence to a stationary distribution; or monitoring covergence to averages using within and between variances and effective sample sizes.
+
+4. Engaging more deeply with the formalities of model checking, selection and validation in Bayesian statistics, such as using posterior-predictive checks, sensitivity analyses etc.
+
+5. Supplementing the content of 10-708 lecture 14, the random-walk behaviour of the Metropolis algorithm can be viewed as a computationally inefficient means of exploring the target density. Hamiltonian Monte Carlo methods attempt to address this by borrowing ideas from statistical physics to explore the differential geometry of the target density landscape using gradient-based information. Its behaviour could be explored in this context.
 
 
-## References
+## References.
 
-[Gianluca Baio and Marta Blangiardo. Bayesian hierarchical model for the prediction of football results.
-Journal of Applied Statistics, 37(2):253-264, 2010.](https://discovery.ucl.ac.uk/id/eprint/16040/1/16040.pdf)
+[1] [Gianluca Baio and Marta Blangiardo. Bayesian hierarchical model for the prediction of football results. Journal of Applied Statistics, 37(2):253-264, 2010.](https://discovery.ucl.ac.uk/id/eprint/16040/1/16040.pdf)
+
+[2] [Gareth O. Roberts. Jeffrey S. Rosenthal. "Optimal scaling for various Metropolis-Hastings algorithms." Statist. Sci. 16 (4) 351 - 367, November 2001.](https://projecteuclid.org/journals/statistical-science/volume-16/issue-4/Optimal-scaling-for-various-Metropolis-Hastings-algorithms/10.1214/ss/1015346320.full)
 
 
 
