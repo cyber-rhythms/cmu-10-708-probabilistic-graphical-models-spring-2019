@@ -1,14 +1,12 @@
 ## Posterior inference in a Bayesian hierarchical model using the Metropolis algorithm: Sports analytics with 2013-2014 English Premier League football results.
 
-This directory contains the materials produced when completing "Q4: Markov Chain Monte Carlo" of the assignment "10-708 PGM (Spring 2019): Homework 2 v1.1", whose rubric can be found [here](https://github.com/cyber-rhythms/cmu-10-708-probabilistic-graphical-models-spring-2019/blob/master/homework-assignments/hw-2/hw-2-v1.1.pdf).
+>***The main script in this directory conducts posterior inference of team attack and defence strength (parameters) for 20 English >Premier League football teams in a Bayesian hierarchical model, given a random initialisation of the prior means and variances >(hyperparameters) on these attacking and defence strengths, and goals (observed data) from the 2013-2014 season. The posterior >inference procedure uses a random walk Metropolis algorithm with a isotropic Gaussian symmetric proposal distribution, which is an >instance of the more general class of simulation-based Markov chain Monte Carlo methods.***
 
-**The main script in this directory conducts posterior inference of team attack and defence strength (parameters) for 20 English Premier League teams in a Bayesian hierarchical model, given a random initialisation of the prior means and variances hyperparameters) on these attacking and defence strengths, and goals (observed data) from the 2013-2014 season.**
+This directory contains the materials produced when completing "Q4: Markov Chain Monte Carlo" of the assignment "10-708 PGM (Spring 2019): Homework 2 v1.1", whose rubric can be found [here](https://github.com/cyber-rhythms/cmu-10-708-probabilistic-graphical-models-spring-2019/blob/master/homework-assignments/hw-2/hw-2-v1.1.pdf).
 
 The Bayesian hierarchical model specification, pseudocode, mathematical derivations, and analysis whiuch pertain to this repository are located in my write-up of the assignment in the Jupyter notebook [here].
 
 The assignment is an adaptation of the Bayesian hierarchical model of Baio and Blangiardo (2010) to data for the 2013-2014 Premier League football results, rather than Italian Serie A results.
-
-
 
 ## Directory contents.
 
@@ -55,6 +53,10 @@ numpy==1.19.2
 3. Executing the main script `metropolis.py` will create 3 new sub-directories in your current working directory (where you have saved the files specified in step 1). Those sub-directories are `/logs`, `/results`, `/figures`. Furthermore, the script will produce `.txt` log files, which are saved in `/logs`; `.npz` results files, which are saved in `/results`, and a number of `.png` visualisations, which are saved in `/figures`. Further information on these can be found in the `readme.md` of the relevant sub-directories.
 
 5. *After* the mainscript `metropolis.py` has terminated, place the Jupyter notebook `MCMC-suppl-visualisations.ipynb` in your current working directory, then open it and run each of the code cells. `MCMC-suppl-visualisations.ipynb` will access the `/results` sub-directory, and unpack `metropolis-results-sigma=0.005-t=50.npz`. It is important to wait until either the main script has terminated (or at least until `metropolis-results-sigma=0.005-t=50.npz` has been generated in `/results`) before running the code cells in the Jupyter notebook. The notebook will then generate the required posterior histogram and scatter plot of estimated empirical means of the attacking and defence strength parameters for each of the Premier League teams. These visualisations will be saved as `posterior-density-histogram.png` and `scatter-plot-estimated-posterior-means.png` in the `/results` directory.
+
+## Directions for further exploration.
+
+
 
 ## References
 
