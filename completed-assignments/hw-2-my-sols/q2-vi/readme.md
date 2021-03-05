@@ -3,7 +3,7 @@
 This directory contains the materials I produced as part of self-study when completing "Q2: Variational inference" of the assignment
 "10-708 PGM (Spring 2010): Homework 2 v1.1", whose rubric can be found [here](https://github.com/cyber-rhythms/cmu-10-708-probabilistic-graphical-models-spring-2019/blob/master/homework-assignments/hw-2/hw-2-v1.1.pdf)
 
-*Both scripts in this directory implement a variational expectation-maximisation algorithm on a pre-processed Wikipedia data set of to estimate the topic-word distribution matrix of an adapted latent Dirichlet allocation model. Where the latent Dirichlet allocation model has been augmented with a hidden Markov model whose transition matrix is used to model sequential latent topic transition probabilities. The variational expectation-maximisation algorithm proceeds in an iterative two-step procedure whereby given current estimates of model parameters and hyperparameters,*
+*Both scripts in this directory implement a variational expectation-maximisation algorithm on a pre-processed Wikipedia data set to estimate the topic-word distribution matrix of an adapted latent Dirichlet allocation model. Where the latent Dirichlet allocation model has been augmented with a hidden Markov model whose transition matrix is used to model sequential latent topic transition probabilities. The variational expectation-maximisation algorithm proceeds in an iterative two-step procedure whereby given current estimates of model parameters and hyperparameters,*
 
 *1.*
 
