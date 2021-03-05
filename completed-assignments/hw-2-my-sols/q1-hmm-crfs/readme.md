@@ -1,12 +1,14 @@
-## Using hiddden Markov models (HMMs) and conditional random fields (CRFs) for parts-of-speech tagging.
+## Using hiddden Markov models (HMMs) and linear-chain conditional random fields (CRFs) for parts-of-speech tagging.
 
 This directory contains the materials I produced as part of self-study when completing "Q1. Sequential models for POS tagging" of the assignment "10-708 PGM (Spring 2019): Homework 2 v1.1", whose rubric can be found [here](https://github.com/cyber-rhythms/cmu-10-708-probabilistic-graphical-models-spring-2019/blob/master/homework-assignments/hw-2/hw-2-v1.1.pdf).
 
 *Both scripts in this directory are used for implementing training and inference of the most likely sequence of parts-of-speech tags applied to the Wall Street Journal portion of the Penn Treebank corpus.*
 
-*As part of a supervised-learning procedure, the script `pos-hmm.py` uses parts-of-speech tagged training sentences to estimate the parameters of a hidden Markov model via maximum likelihood estimation. The trained discriminative model is then used to predict the most likely sequence of parts-of-speech tags using a Viterbi decoding algorithm.*
+*As part of a supervised-learning procedure, the script `pos-hmm.py` uses parts-of-speech tagged training sentences to estimate the parameters of a hidden Markov model via maximum likelihood estimation. The trained discriminative model is then used to predict the most likely sequence of parts-of-speech tags on test data using a Viterbi decoding algorithm.*
 
-*The script `pos-linear-crf.py` uses training data to estimate the parameters on a linear-chain conditional random field, again via maximum likelihood estimation. As a necessary subroutine within the training procedure, computation of unary and pairwise marginal posterior distributions via a junction-tree message passing algorithm is implemented, and parameters are iteratively updated via stochastic gradient descent until convergence. Inference/sequence prediction then proceeds by using the trained generative model together with a Viterbi decoding algorithm.*
+*The script `pos-linear-crf.py` uses training data to estimate the parameters on a linear-chain conditional random field, again via maximum likelihood estimation. As a necessary subroutine within the training procedure, computation of unary and pairwise marginal posterior distributions via a junction-tree message passing algorithm is implemented, and parameters are iteratively updated via stochastic gradient descent until convergence. Inference/sequence prediction then proceeds on test data by using the trained generative model together with a Viterbi decoding algorithm.*
+
+The specification of the HMM and linear-chain CRF model, mathematical derivations and pseudocode for the training and inference procedures of both models which pertain to this repository are located in my write-up of the assignment in the Jupyter notebook [here].
 
 ## Directory contents.
 
