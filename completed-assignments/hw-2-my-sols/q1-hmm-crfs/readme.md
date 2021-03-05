@@ -1,4 +1,4 @@
-## Using hiddden Markov models (HMMs) and linear-chain conditional random fields (CRFs) for parts-of-speech tagging.
+## Using hidden Markov models (HMMs) and linear-chain conditional random fields (CRFs) for parts-of-speech tagging.
 
 This directory contains the materials I produced as part of self-study when completing "Q1. Sequential models for POS tagging" of the assignment "10-708 PGM (Spring 2019): Homework 2 v1.1", whose rubric can be found [here](https://github.com/cyber-rhythms/cmu-10-708-probabilistic-graphical-models-spring-2019/blob/master/homework-assignments/hw-2/hw-2-v1.1.pdf).
 
