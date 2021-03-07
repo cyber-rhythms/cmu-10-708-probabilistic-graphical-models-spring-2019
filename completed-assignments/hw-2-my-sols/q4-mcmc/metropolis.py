@@ -26,14 +26,17 @@ def parameter_grid():
 
     Returns
     -------
-    sigmas : List[float]
-        A list of floats containing isotropic Gaussian proposal distr. standard deviations.
+    out : tuple(list, list, int)
+        Tuple containing the following items:
 
-    thinning_params : List[float]
-        A list of floats containing values of the thinning parameter.
+        1. sigmas : list[float]
+            A list of floats containing isotropic Gaussian proposal distr. standard deviations.
 
-    num_settings: int
-        The number of combinations of MCMC parameter settings to run the Metropolis algorithm.
+        2. thinning_params : list[float]
+            A list of floats containing values of the thinning parameter.
+
+        3. num_settings: int
+            The number of combinations of MCMC parameter settings to run the Metropolis algorithm.
     """
     sigmas= [0.005, 0.05, 0.5]
     thinning_params = [1, 5, 20, 50]
@@ -184,7 +187,7 @@ def random_walk_metropolis(init_theta, init_eta, data, sigma, max_iter):
     Returns
     -------
     out : tuple(ndarray, int)
-        Tuple containing the following:
+        Tuple containing the following items:
 
             1. theta : ndarray
                 A shape-(max_iter + 1, 41) ndarray - MCMC chain of the model parameters.
@@ -270,7 +273,14 @@ def create_dict():
 
 
 def create_new_sub_dir_paths():
+    """Create new sub-directory path locations.
 
+    Returns
+    -------
+    paths : list[str]
+        A list of sub-directory paths, stored as strings.
+
+    """
     paths = dict()
 
     # Name of new sub-directories where scripts will be saved.
@@ -476,7 +486,7 @@ if __name__ == "__main__":
             print("sigma = {}".format(sigma))
             print("thinning parameter = {}".format(thinning_param))
 
-            # Make a call to the ramdom seed for each run of the Metropolis algorithm.
+            # Make a call to the random seed for each run of the Metropolis algorithm.
             # Controlling for the inherent stochasticity of MCMC allows for fair comparison/
             # evaluation of Metropolis algorithm for each of the MCMC parameter settings.
             np.random.seed(21)
