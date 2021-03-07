@@ -5,13 +5,11 @@ This directory contains the materials I produced as part of self-study when comp
 
 *Both scripts in this directory implement a variational expectation-maximisation algorithm on a pre-processed Wikipedia data set to estimate the topic-word distribution matrix (parameter) of an adapted latent Dirichlet allocation model. Where the latent Dirichlet allocation model has been augmented with a hidden Markov model whose transition matrix is used to model sequential latent topic transition probabilities.*
 
-*The variational expectation-maximisation algorithm proceeds in an iterative two-step procedure. Given an initialisation of/fixed current estimates of model parameters and hyperparameters, the variational E-step sequentially updates each variational parameter within a set in turn, whilst holding the remaining variational parameters fixed, continuing until convergence of the evidence lower bound for that specific model (hyper)-parametrisation. The variational M-step then updates the model parameters, given estimates of the variational parameters computed in the E-step. These variational EM update sequences are continued until convergence of the evidence lower bound (ELBO).*
+*The variational expectation-maximisation algorithm proceeds in an iterative two-step procedure. Given an initialisation of/fixed current estimates of model parameters and hyperparameters, the variational E-step sequentially updates each variational parameter within a set in turn, whilst holding the remaining variational parameters fixed, continuing until convergence of the evidence lower bound for that specific model (hyper)-parametrisation. The variational M-step then updates the model parameters, given estimates of the variational parameters computed in the E-step. These variational EM update sequences are continued until convergence of the evidence lower bound (ELBO).The difference between the two scripts, `lda-hmm-vem-empirical-bayes.py` and `lda-hmm-vem-hyp-tune.py`, is the treatment of the model hyperparameters.*
 
-*The difference between the two scripts, `lda-hmm-vem-empirical-bayes.py` and `lda-hmm-vem-hyp-tune.py`, is the treatment of the model hyperparameters. The former script, in addition to updating the model parameters to maximise the ELBO in the M-step, will additionally update model hyperparameters in each* 
+*The script `lda-hmm-vem-empirical-bayes.py`, in addition to updating the model parameters to maximise the ELBO in the variational M-step, will additionally update model hyperparameters, resulting in empirical Bayes estimates of the latter if the variational EM update sequences converge.*
 
-*1.*
-
-*2.*
+*The latter script `lda-hmm-vem-hyp-tune.py` does not update the model hyperparameters, rather, tunes these hyperparameters by fitting multiple models and then selecting the hyperparameter setting (indexing a model) that performs the best on a metric computed on a held-out test-set. In this simplified setting, the metric used is the ELBO.*
 
 The LDA-HMM model specification, mathematical derivations of the co-ordinate ascent variational EM updates, and pseudocode can be found in my write-up
 in my write-up of the assignment in the Jupyter notebook [here].
