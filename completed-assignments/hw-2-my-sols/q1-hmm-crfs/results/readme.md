@@ -27,9 +27,11 @@ Each `.npz` file is a dictionary-like object, and can be accessed for further an
 
 6. `npzfile['joint NLL (test)'] - float.` The joint negative log-likelihood of the HMM, evaluated using the tagged test sentences as the data, and using the HMM maximum likelihood estimates of the initial distribution, state transition matrix, but smoothed estimates of the emission matrix.
 
-7. `npzfile['HMM Viterbi tagged sentences'] - A shape-(783,) ndarray.` The 
+7. `npzfile['HMM Viterbi tagged sentences'] - A shape-(783,) ndarray.` The tagged sentences containing POS tag predictions output by the Viterbi algorithm. Consists of 783 variable length lists of tagged sentences, where each sentence consists of a variable number of (word, POS tag prediction) tuples.
 
+8. `npzfile['per word accuracy'] - float.` The per-word accruracy of the POS tag predictions output by Viterbi decoding, compared with the tagged test sentences.
 
+9. `npzfile['confusion matrix'] - A shape-(12, 12) ndarray.` The confusion matrix of actual tagged test-data POS tags and predicted POS tags from Viterbi decoding. Unnormalised, and is computed for a total 20334 actual-predicted POS pairs.
 
 
 
