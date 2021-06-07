@@ -17,7 +17,7 @@ Each `.npz` file is a dictionary-like object, and can be accessed for further an
 
 1. `npzfile['pi'] - A shape-(12,) ndarray.` Maximum likelihood estimates of the hidden Markov model (HMM) initial state distribution matrix, corresponding to a discrete Multinoulli distribution over possible POS tags.
 
-2. `npzfile['A'] - A shape-(12, 12) ndarray.` Maximum likelihood estimates of the HMM POS tag discrete state transition matrix. 
+2. `npzfile['A'] - A shape-(12, 12) ndarray.` Maximum likelihood estimates of the HMM POS tag discrete state transition matrix $X_1$
 
 3. `npzfile['B'] - A shape-(12, 12408) ndarray.` Maximum likelihood estimates of the HMM word-POS tag discrete emission matrix. Sparse and therefore not used for inference, but included for reference.
 
