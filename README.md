@@ -10,6 +10,8 @@ This repo also contains the work I completed as part of self-study of this cours
 
 > <https://cyber-rhythms.github.io/2021/06/08/self-study-10-708.html>
 
+## Directory contents.
+
 For those looking to work through this course by themselves, this repo contains:
 
 1) `10-708-probabilistic-graphical-models-coursepage.html` - an archived complete html document
