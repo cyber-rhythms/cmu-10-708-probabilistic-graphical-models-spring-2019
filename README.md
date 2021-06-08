@@ -4,9 +4,9 @@ This is a fully organised, integrity checked repo containing all the lecture mat
 
 > <https://sailinglab.github.io/pgm-spring-2019/lectures/>
 
-This is to provide an additional download location for those who wish to use this course for self-study, and in the event that the course page is no longer active. This repo also contains the work I completed as part of self-study of this course.
+This is to provide an additional download location for those who wish to use this course for self-study, and in the event that the course page is no longer active.
 
-For further information, please visit my blog post below, which accompanies the content of this repo.
+This repo also contains the work I completed as part of self-study of this course. For further information, please visit my blog post below, which accompanies the content of this repo.
 
 > <https://cyber-rhythms.github.io/2021/06/08/self-study-10-708.html>
 
