@@ -13,5 +13,5 @@ setuptools==52.0.0.post20210125
 sip==4.19.13
 six==1.15.0
 tornado==6.1
-wheel==0.36.2
+wheel==0.38.1
 wincertstore==0.2
