@@ -26,15 +26,15 @@ The contents of this directory are as follows:
 
 ## Getting started.
 
-In order for the script to run appropriately, use conda (recommended) or Python virtual environments. The packages used in the script are specfied for those wishing to run the script using other meanns.
+In order for the script to run appropriately, use conda (recommended) or Python virtual environments. The packages used in the script are specfied for those wishing to run the script using other means.
 
-### Using conda.
+### Using Conda.
 
-Download the `environment.yml` file to an appropriate working directory. Create a [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) environment using the provided `environment.yml` file. That is, open a terminal or Anaconda3 prompt and run `conda env create -f environment.yml`. Then activate the environment by running `conda activate hw2-10-708`. You can now run the script from this terminal.
+Download the `environment.yml` file to an appropriate working directory. Create a [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) environment using the provided `environment.yml` file. That is, open a terminal or Anaconda3 prompt and run `conda env create -f environment.yml`. Then activate the environment by running `conda activate hw2-10-708`. You can now run the script from this terminal using `python metropolis.py`
 
-### Using a Python (3.8.8) virtual environment.
+### Using a Python 3.11.5 `venv` virtual environment and `pip`.
 
-Download the `requirements.txt` file to an appropriate working directory. Open a terminal, activate the Python virtual environment and run `pip install -r requirements.txt`. The relevant packages used to run the script should be installed. You can now run the script from this terminal.
+Download the `requirements.txt` file to an appropriate working directory. Create a [venv](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/) virtual environment by navigating to the working directory in an open terminal, then running `python -m venv .venv`. Then activate the virtual environment by running `.venv\Scripts\activate`. Install the required packages using `python -m pip install -r requirements.txt`. The relevant packages used to run the script should be installed. You can now run the script from this terminal using `python metropolis.py`.
 
 ### Packages used in the script.
 
