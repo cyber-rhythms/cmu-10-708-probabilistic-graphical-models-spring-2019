@@ -48,7 +48,7 @@ numpy==1.19.2
 
 ## Running the code from scratch.
 
-1.  Place the main script `metropolis.py`, the data `premier_league_2013_2014.dat`, and the PRNG state file `PRNG_state.npy` into a working directory of your choice. It is assumed that this working directory is the same as where you placed the `environment.yml` or `requirements.txt` file. Please ensure that the former three files are placed in the *same working directory*, otherwise the script will not execute as intended.
+1.  Place the main script `metropolis.py`, the data `premier_league_2013_2014.dat`, and the PRNG state file `PRNG_state.npy` into a working directory of your choice. It is assumed that this working directory is the same as where you placed the `environment.yml` or `requirements.txt` file. Please ensure that the main script, data and PRNG state file are placed in the *same working directory*, otherwise the script will not execute as intended.
 
 2. Execute the main script by running `python metropolis.py` in your terminal.
 
